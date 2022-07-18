@@ -32,58 +32,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mobile"
-        app:layout_constraintBottom_toBottomOf="@+id/etNum1"
-        app:layout_constraintEnd_toStartOf="@+id/etNum1"
-        app:layout_constraintHorizontal_bias="0.79"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/etNum1"
-        app:layout_constraintVertical_bias="0.384" />
-
-    <EditText
-        android:id="@+id/etNum1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNum2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintHorizontal_bias="0.29"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvName1" />
+        app:layout_constraintTop_toTopOf="@+id/tvNum2" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgCall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imgMessage"
         app:srcCompat="@drawable/ic_baseline_call_24" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imgMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/etNum1"
+        app:layout_constraintStart_toEndOf="@+id/imgCall"
+        app:layout_constraintTop_toBottomOf="@+id/tvNum2"
         app:srcCompat="@drawable/ic_baseline_textsms_24" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgVideo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imgMessage"
+        app:layout_constraintTop_toTopOf="@+id/imgMessage"
         app:srcCompat="@drawable/ic_baseline_videocam_24" />
 
     <TextView
@@ -91,14 +78,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Whatsapp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintBottom_toBottomOf="@+id/imgWhatsapp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+        app:layout_constraintTop_toTopOf="@+id/imgWhatsapp" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imgWhatsapp"
         android:layout_width="75dp"
         android:layout_height="64dp"
         android:layout_marginTop="24dp"
@@ -106,7 +93,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toEndOf="@+id/tvText2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imgVideo"
         app:srcCompat="@drawable/whatsapp" />
 
     <TextView
@@ -131,12 +118,58 @@
         app:layout_constraintTop_toBottomOf="@+id/tvText3" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imgEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+    <ImageView
+        android:id="@+id/imgFavourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgEdit"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_star_outline_24" />
+
+    <ImageView
+        android:id="@+id/imgShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toEndOf="@+id/imgEdit"
+        app:srcCompat="@drawable/ic_baseline_share_24" />
+
+    <ImageView
+        android:id="@+id/imgMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgShare"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+    <TextView
+        android:id="@+id/tvNum2"
+        android:layout_width="117dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="24dp"
+        android:text="+254 777 444 014"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toEndOf="@+id/tvText1"
+        app:layout_constraintTop_toBottomOf="@+id/tvName1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
